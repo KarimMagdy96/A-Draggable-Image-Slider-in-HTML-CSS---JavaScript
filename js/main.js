@@ -34,7 +34,7 @@ const draggering = (e) => {
 
 const drageend=()=>{
     isDragStart = false;
-    // carosel.classList.remove("dragging");
+   
 }
 
 carosel.addEventListener("mousedown", dragestart);
