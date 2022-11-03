@@ -1,14 +1,19 @@
 const carosel = document.querySelector(".carosel");
 
 let isDragStart = false;
+let prevpagex;
+let preScroolLeft;
 
-const dragestart = () => {
+const dragestart = (e) => {
   isDragStart = true;
+  prevpagex= e.pageX
+  preScroolLeft= carosel.scrollLeft;
 };
 const draggering = (e) => {
   if (!isDragStart) return;
   e.preventDefault();
-  carosel.scrollLeft = e.pageX;
+  let possisiondiff = e.pageX - prevpagex;
+  carosel.scrollLeft = preScroolLeft - possisiondiff;
 };
 
 const drageend=()=>{
