@@ -37,6 +37,7 @@ body{
     font-size: 0px;
     cursor: pointer;
     overflow: hidden;
+    scroll-behavior: smooth;
 
 }
 .wrapper{
