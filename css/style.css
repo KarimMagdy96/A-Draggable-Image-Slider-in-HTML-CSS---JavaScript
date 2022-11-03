@@ -26,6 +26,17 @@ body{
     transform: translateY(-50%);
 
 }
+.wrapper::after{
+    content: "A Draggable Image Slider in HTML CSS & JavaScript";
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    bottom: 105%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+}
 .wrapper i:first-child{
     left: -23px;
 }
