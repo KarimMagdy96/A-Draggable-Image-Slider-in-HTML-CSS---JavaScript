@@ -11,5 +11,10 @@ const draggering = (e) => {
   carosel.scrollLeft = e.pageX;
 };
 
+const drageend=()=>{
+    isDragStart = false;
+}
+
 carosel.addEventListener("mousedown", dragestart);
+carosel.addEventListener("mouseup", drageend);
 carosel.addEventListener("mousemove", draggering);
