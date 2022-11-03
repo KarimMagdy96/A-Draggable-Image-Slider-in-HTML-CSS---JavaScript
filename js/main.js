@@ -26,12 +26,15 @@ const dragestart = (e) => {
 const draggering = (e) => {
   if (!isDragStart) return;
   e.preventDefault();
+ carosel.classList.add('test')
+ console.log('worrrrrrrrrrrrrrrrrrrrrk')
   let possisiondiff = e.pageX - prevpagex;
   carosel.scrollLeft = preScroolLeft - possisiondiff;
 };
 
 const drageend=()=>{
     isDragStart = false;
+    // carosel.classList.remove("dragging");
 }
 
 carosel.addEventListener("mousedown", dragestart);
