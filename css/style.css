@@ -1,82 +1,78 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #343f4f;
-    padding: 0 35px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #343f4f;
+  padding: 0 35px;
 }
-.wrapper i{
-    background-color: white;
-    width: 46px;
-    height: 46px;
-    text-align: center;
-    line-height: 46px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.2rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
+.wrapper i {
+  background-color: white;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.wrapper::after{
-    content: "A Draggable Image Slider in HTML CSS & JavaScript";
-    width: 100%;
-    text-align: center;
-    height: fit-content;
-    bottom: 105%;
-    left: 50%;
-    position: absolute;
-    color: white;
-    transform: translate(-50%,-50%);
-
+.wrapper::after {
+  content: "A Draggable Image Slider in HTML CSS & JavaScript";
+  width: 100%;
+  text-align: center;
+  height: fit-content;
+  bottom: 105%;
+  left: 50%;
+  position: absolute;
+  color: white;
+  transform: translate(-50%, -50%);
 }
-.wrapper i:first-child{
-    left: -23px;
+.wrapper i:first-child {
+  left: -23px;
 }
-.wrapper i:last-child{
-    right: -23px;
+.wrapper i:last-child {
+  right: -23px;
 }
-.wrapper .carosel{
-    white-space: nowrap;
-    font-size: 0px;
-    cursor: pointer;
-    overflow: hidden;
-    scroll-behavior: smooth;
-
+.wrapper .carosel {
+  white-space: nowrap;
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
-.wrapper{
-    max-width: 1200px;
-    position: relative;
-  
+.wrapper {
+  max-width: 1200px;
+  position: relative;
 }
-.carosel img{
-    height: 340px;
-    width: calc(100%/3);
-    margin-left: 14px;
-    object-fit: cover;
+.carosel img {
+  height: 340px;
+  width: calc(100% / 3);
+  margin-left: 14px;
+  object-fit: cover;
 }
 ::selection {
-    background-color: transparent;
-    color: #000;
+  background-color: transparent;
+  color: #000;
 }
-.carosel img:first-child{
-    margin-left:0px;
+.carosel img:first-child {
+  margin-left: 0px;
 }
-@media (max-width:900px) {
-    .carosel img{
-        width: calc(100%/2);
-    }
+@media (max-width: 900px) {
+  .carosel img {
+    width: calc(100% / 2);
+  }
 }
-@media (max-width:550px) {
-    .carosel img{
-        width:100%;
-    }
+@media (max-width: 550px) {
+  .carosel img {
+    width: 100%;
+  }
 }
