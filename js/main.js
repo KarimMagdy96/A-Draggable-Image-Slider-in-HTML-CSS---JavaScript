@@ -38,5 +38,8 @@ const drageend=()=>{
 }
 
 carosel.addEventListener("mousedown", dragestart);
+carosel.addEventListener("touchstart", dragestart);
 carosel.addEventListener("mouseup", drageend);
+carosel.addEventListener("touchend", drageend);
 carosel.addEventListener("mousemove", draggering);
+carosel.addEventListener("touchmove", draggering);

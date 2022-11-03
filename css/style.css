@@ -51,6 +51,10 @@ body{
     margin-left: 14px;
     object-fit: cover;
 }
+::selection {
+    background-color: transparent;
+    color: #000;
+}
 .carosel img:first-child{
     margin-left:0px;
 }
