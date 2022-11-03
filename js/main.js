@@ -1,7 +1,7 @@
 const carosel = document.querySelector(".carosel");
 const arrowicons = document.querySelectorAll(".wrapper i ");
 const firstImg = document.querySelectorAll(".carosel img ")[0];
-let firstimgwidth = firstImg.clientHeight +60;
+let firstimgwidth = firstImg.clientHeight +46;
 console.log(firstimgwidth);
 
 let isDragStart = false;
